@@ -113,7 +113,3 @@ python scripts/plot_embeddings.py --npz outputs/synthetic_multiview/seed_0.npz -
 ```bash
 python -m unittest discover -s tests -v
 ```
-
-## Notes
-
-Ground-truth labels are used only to determine the evaluation cluster count and calculate metrics; autoencoder reconstruction is unsupervised. The fusion stage gives equal contributions to the processed views. Input features can be rescaled by column to `[0, 1]`. Generated data, model checkpoints, and experimental outputs are excluded from version control by `.gitignore`. Publish only datasets that you have permission to redistribute.
